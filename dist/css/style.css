@@ -1,0 +1,199 @@
+a:link{text-decoration:none;}
+a:visited{text-decoration:none;}
+a:hover{text-decoration:none;}
+
+/* hide scrollbar but allow scrolling */
+body {
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll; 
+}
+  
+body::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+}
+
+.ima {
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+  }
+
+.ima:hover {
+    transform: scale(1.2);
+  }
+
+.videoWrapper {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+  }
+
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.full-width-container {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+}
+
+.vh-100 {
+  min-height: 100vh;
+  }
+
+  body,
+    html {
+        height: 100%;
+        scroll-behavior: smooth;
+    }
+
+    .full-height-section {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar-nav .nav-link {
+        color: white;
+    }
+
+    .navbar-nav .nav-text:hover {
+        color: #20c997;
+        border-bottom: 2px solid #20c997;
+        text-shadow: 0 0 30px rgba(32,201,151, 1);
+        /* Ganti dengan warna hover yang diinginkan */
+    }
+
+    .navbar-nav .nav-ico:hover {
+        color: #20c997;
+        text-shadow: 0 0 30px rgba(32,201,151, 1);
+        /* Ganti dengan warna hover yang diinginkan */
+    }
+
+    #scrollToTopBtn {
+        position: fixed;
+        bottom: 50px;
+        right: 60px;
+        display: none;
+    }
+
+    #scrollToTopBtn.fade-in {
+        animation: fade-in 0.3s forwards;
+    }
+
+    #scrollToTopBtn.fade-out {
+        animation: fade-out 0.3s forwards;
+    }
+
+    @keyframes fade-in {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes fade-out {
+        from {
+            opacity: 1;
+        }
+
+        to {
+            opacity: 0;
+        }
+    }
+    
+  .navbar {
+    transition: background-color 0.3s, backdrop-filter 0.3s, box-shadow 0.3s;
+    backdrop-filter: blur(0px);
+    box-shadow: none;
+  }
+  
+  .navbar.blur {
+    backdrop-filter: blur(10px);
+    background-color: rgba(33, 37, 41, 0.1);
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.7);
+  } 
+
+  .blur1 {
+    backdrop-filter: blur(2px);
+    background-color: rgba(255,255,255,0.1);
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.3);
+    color: white;
+  }
+
+  .blur1:hover {
+    background-color: rgba(32,201,151,1);
+    color: #212529;
+    box-shadow: 0 0 10px rgba(32,201,151,1);
+  }
+
+  .bg-dark-gradient {
+    background: linear-gradient(to bottom, #212529, #343a40);
+  }
+
+  .pr:hover {
+    box-shadow: 0 0 30px rgba(0, 0, 91, 0.3);
+  }
+
+  .text-glow-effect {
+    text-shadow: 0 0 30px rgba(32,201,151, 1);
+  }
+
+  .glow-effect:hover {
+    box-shadow: 0 0 30px rgba(32,201,151, 0.3);
+  }
+  
+  .border-custom {
+    box-shadow: 0 0 30px rgba(32,201,151, 0.5);
+    border: 2px solid #20c997;
+  }
+
+  .video-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    /* Adjust this value to set the aspect ratio of the video (16:9 = 56.25%) */
+    overflow: hidden;
+    }
+
+    .video-container video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .gradient-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(0deg, rgba(33, 37, 41, 0.5) 0%, rgba(52, 58, 64, 1) 100%);
+    }
+
+    .btn {
+        transition: all 0.2s;
+        -webkit-transition: all 0.2s;
+        -moz-transition: all 0.2s;
+      }
+    
+    .btn:hover {
+        transform: scale(1.1);
+      }
