@@ -107,53 +107,6 @@ window.onload = function () {
 // Typewriter End
 
 
-// Loading Typewriter Start
-var textArray = [
-  "Aku memang diam. Tapi aku tidak buta.",
-  "Hidup adalah serangkaian langkah kecil.",
-  "Rahasia hidup adalah menikmati berlalunya waktu.",
-  "Hidup adalah petualangan, beranikan dirimu.",
-  "Fokus pada perjalanan, bukan tujuan."
-]; // Ganti dengan array kata-kata yang diinginkan
-var speed = 100; // Kecepatan penulisan (ms)
-var index = 0;
-var arrayIndex = 0;
-
-function typeWriter() {
-  var currentText = textArray[arrayIndex];
-  if (index < currentText.length) {
-    document.getElementById("loading-typewriter").innerHTML +=
-      currentText.charAt(index);
-    index++;
-    setTimeout(typeWriter, speed);
-  } else {
-    setTimeout(eraseText, speed * 5); // Waktu tunda sebelum menghapus teks
-  }
-}
-
-function eraseText() {
-  var currentText = textArray[arrayIndex];
-  if (index >= 0) {
-    var newText = currentText.substring(0, index - 1);
-    document.getElementById("loading-typewriter").innerHTML = newText;
-    index--;
-    setTimeout(eraseText, speed *1);
-  } else {
-    arrayIndex++;
-    if (arrayIndex >= textArray.length) {
-      arrayIndex = 0;
-    }
-    setTimeout(typeWriter, speed); // Waktu tunda sebelum menulis teks lagi
-  }
-}
-
-// Memulai efek typewriter saat halaman dimuat
-window.onload = function () {
-  typeWriter();
-};
-
-// Loading Typewriter End
-
 $('a[href^="#"]').on("click", function (event) {
   var target = $(this.getAttribute("href"));
   if (target.length) {
