@@ -1,3 +1,6 @@
+
+
+
 $(document).ready(function() {
     // Tambahkan smooth scrolling ke semua link
     $("a").on('click', function(event) {
