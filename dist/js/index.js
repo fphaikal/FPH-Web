@@ -125,3 +125,8 @@ function showContent(contentId) {
   }
   document.getElementById(contentId).style.display = 'block';
 }
+
+// JavaScript untuk menyembunyikan loading overlay setelah halaman selesai dimuat
+window.addEventListener('load', function() {
+  document.querySelector('.loading-overlay').style.display = 'none';
+});
