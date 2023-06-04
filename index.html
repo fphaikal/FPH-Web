@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="dist/css/style.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <style>
     @font-face {
@@ -136,7 +136,8 @@
                     Seorang anak SMK yang sedang mencari jalan menuju masa depan.
                 </p>
                 <a href="#tentang" class="btn px-4 shadow-4 rounded-5 blur1">Learn More <i
-                        class="bi bi-arrow-right"></i></a>
+                        class="bi bi-arrow-right"></i>
+                </a>                                                 
             </div>
         </div>
     </section>
@@ -145,7 +146,7 @@
         <div class="container-fluid">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-7 p-5 justify-content-center">
+                    <div class="col-md-7 p-5 justify-content-center blur2 border border-light"  data-aos="fade-up" data-aos-duration="1000">
                         <h1 class="mb-3">
                             Tentang
                             <span class="text-glow-effect" style="color: #20c997">Saya.</span>
@@ -165,7 +166,7 @@
                         <a href="#resume" class="btn px-4 shadow-4 rounded-5 blur1">Next<i
                                 class="bi bi-arrow-right"></i></a>
                     </div>
-                    <div class="col-md-4 mx-auto my-auto">
+                    <div class="col-md-4 mx-auto my-auto" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
                         <img src="src/fph_pp.jpg"
                             class="img-fluid ima shadow rounded-circle d-none d-sm-block d-md-block" alt="" />
                     </div>
@@ -179,7 +180,7 @@
         <div class="container-fluid">
             <div class="p-5">
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-4" data-aos="fade-up" data-aos-duration="1000">
                         <div class="container">
                             <h5>Software Skills</h5>
                             <div class="border-custom mb-4" style="color: #20c997"></div>
@@ -390,7 +391,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-4 mt-0 mb-0">
+                    <div class="col-md-4 mt-0 mb-0" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
                         <div class="container">
                             <h5 class="">Pengalaman</h5>
                             <div class="border-custom mb-3" style="color: #20c997"></div>
@@ -424,7 +425,7 @@
                             <div class="row mb-5"></div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
                         <div class="container">
                             <h5 class="">Hobi & Minat</h5>
                             <div class="border-custom mb-4" style="color: #20c997"></div>
@@ -481,7 +482,7 @@
     <section id="portfolio" class="full-height-section gradient-background-5 text-light">
         <div class="container-fluid">
             <div class="container">
-                <div class="row mt-5">
+                <div class="row mt-5" data-aos="fade-up" data-aos-duration="1000">
                     <div class="col-md-4"></div>
                     <div class="col-md-4">
                         <div class="text-center">
@@ -492,7 +493,7 @@
                     <div class="col-md-4"></div>
                 </div>
                 <div class="row">
-                    <div class="col-12 mb-2">
+                    <div class="col-12 mb-2" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
                         <div class="d-flex justify-content-center text-center mb-3">
                             <ul class="nav justify-content-center ">
                                 <li class="btn px-4 shadow-4 m-1 rounded-5 blur1" onclick="showContent('content1')">All
@@ -504,10 +505,9 @@
                             </ul>
                         </div>
 
-                        <div id="content1" class="content">
-                            <div class="row">
+                        <div id="content1" class="content" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                            <div class="row gx-2 p-4 blur2">
                                 <div class="col-md-4">
-
                                     <div class="row gx-1">
                                         <div class="col-md-6 mt-1">
                                             <div class="ratio ratio-1x1">
@@ -550,7 +550,7 @@
                         </div>
 
                         <div id="content2" class="content" style="display: none;">
-                            <div class="row gx-2">
+                            <div class="row gx-2 p-4 blur2">
                                 <div class="col-md-3 mt-1">
                                     <div class="ratio ratio-1x1">
                                         <img src="src/business-card-1.png" alt="">
@@ -575,7 +575,7 @@
                         </div>
 
                         <div id="content3" class="content" style="display: none;">
-                            <div class="row">
+                            <div class="row p-4 blur2">
                                 <div class="col-md-4 mt-1">
                                     <div class="ratio ratio-1x1">
                                         <img src="src/photo-1.jpg" alt="">
@@ -601,7 +601,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-3"></div>
-                    <div class="col-md-6 text-center p-3">
+                    <div class="col-md-6 text-center p-3" data-aos="fade-up" data-aos-duration="1000">
                         <h1 class="">
                             Kontak 
                             <span class="text-glow-effect" style="color: #20c997">Saya.</span>
@@ -612,7 +612,7 @@
                 <div class="row">
                     <div class="col-md-3"></div>
                     <div class="col-md-6">
-                        <div class="row">
+                        <div class="row" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
                             <div class="d-flex justify-content-center">
                                 <a href="mailto:abufahreza@gmail.com" target="_blank"
                                     class="btn w-100 px-4 shadow-4 m-1 rounded-5 blur1"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
@@ -620,7 +620,7 @@
                                       </svg> Send Email</a>  
                             </div>
                         </div>
-                        <div class="row gx-1">
+                        <div class="row gx-1 " data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
                             <div class="col-md-4">
                                 <div class="d-flex justify-content-center">
                                     <a href="https://www.instagram.com/fp_haikal/" target="_blank"
@@ -648,7 +648,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row gx-1 ">
+                        <div class="row gx-1 " data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
                             <div class="col-md-6">
                                 <div class="d-flex justify-content-center">
                                     <a href="https://www.linkedin.com/in/fp-haikal/" target="_blank"
@@ -678,8 +678,13 @@
         <i class="h2 bi bi-arrow-up-circle-fill text-light"></i>
     </a>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="dist/js/index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 
 <footer>

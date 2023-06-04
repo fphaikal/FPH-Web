@@ -138,7 +138,17 @@ body::-webkit-scrollbar {
     background-color: rgba(32,201,151,1);
     color: #212529;
     box-shadow: 0 0 10px rgba(32,201,151,1);
+
   }
+
+    
+  .blur2 {
+    backdrop-filter: blur(10px);
+    background-color: rgba(33, 37, 41, 0.1);
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.7);
+    border-radius: 50px;
+    border: 1px solid #ffffff;        
+  } 
 
   .bg-dark-gradient {
     background: linear-gradient(to bottom, #212529, #343a40);
@@ -198,6 +208,8 @@ body::-webkit-scrollbar {
         transform: scale(1.1);
       }
 
-
+img {
+  border-radius: 20px;
+}
 
       
