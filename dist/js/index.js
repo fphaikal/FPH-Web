@@ -135,3 +135,4 @@ function showContent(contentId) {
 window.addEventListener('load', function() {
   document.querySelector('.loading-overlay').style.display = 'none';
 });
+
